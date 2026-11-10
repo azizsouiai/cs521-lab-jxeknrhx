@@ -1,0 +1,14 @@
+<!doctype html><html><body><pre id="o">running</pre><script src="/static/pyodide/pyodide.js"></script><script>
+(async()=>{try{const py=await loadPyodide({indexURL:'/static/pyodide/'});
+await py.loadPackage(['pandas','matplotlib','numpy','scipy']);
+py.FS.writeFile('netflix_titles.csv',await (await fetch('/files/netflix_titles.csv')).text());
+const r=await py.runPythonAsync(`
+import pandas as pd, matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+df=pd.read_csv('netflix_titles.csv')
+m=df[df.type=='Movie'].duration.str.replace(' min','').astype(float)
+plt.hist(m,bins=30)
+str((df.shape, round(m.mean(),2), m.median(), pd.__version__))`);
+document.getElementById('o').textContent='OK '+r}catch(e){document.getElementById('o').textContent='ERR '+(e&&e.message?e.message:JSON.stringify(e,Object.getOwnPropertyNames(Object(e))))}})();
+</script></body></html>

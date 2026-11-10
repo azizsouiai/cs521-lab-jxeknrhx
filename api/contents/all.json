@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-11-10T20:23:10.142505Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-11-10T20:23:10.142505Z",
+      "mimetype": null,
+      "name": "CS521_Midterm_PartII.ipynb",
+      "path": "CS521_Midterm_PartII.ipynb",
+      "size": 10447,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-11-10T20:23:10.145519Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-11-10T20:23:10.145519Z",
+      "mimetype": "text/csv",
+      "name": "netflix_titles.csv",
+      "path": "netflix_titles.csv",
+      "size": 3000491,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2026-11-10T20:25:58.497057Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-11-10T20:25:58.498275Z",
+  "mimetype": null,
+  "name": "",
+  "path": "",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
